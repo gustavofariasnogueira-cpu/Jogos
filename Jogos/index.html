@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Além do Éden - Jogos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #ffffff, #f4f8ef);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #2f3e1f;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #556b2f;
+      margin-bottom: 10px;
+      font-size: 2.4rem;
+    }
+
+    p {
+      color: #6b7c52;
+      margin-bottom: 30px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #dce6cf;
+      border-radius: 20px;
+      padding: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 10px 25px rgba(85, 107, 47, 0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #556b2f;
+      box-shadow: 0 15px 35px rgba(85, 107, 47, 0.2);
+    }
+
+    .card h2 {
+      color: #556b2f;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #6b7c52;
+    }
+
+    .icone {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .rodape {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #8a9b70;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Além do Éden</h1>
+    <p>Escolha uma atividade para começar</p>
+
+    <div class="menu">
+
+      <!-- JOGO DA FORCA -->
+      <a href="forca.html" class="card">
+        <div class="icone">✝️</div>
+        <h2>Forca Bíblica</h2>
+        <p>Adivinhe palavras bíblicas com base nas dicas.</p>
+      </a>
+
+      <!-- ENEM BÍBLICO -->
+      <a href="enem.html" class="card">
+        <div class="icone">📖</div>
+        <h2>ENEM Bíblico</h2>
+        <p>Teste seu conhecimento com perguntas bíblicas.</p>
+      </a>
+
+<!-- DUELO BÍBLICO -->
+      <a href="duelo.html" class="card">
+        <div class="icone">🔥</div>
+        <h2>Duelo Bíblico</h2>
+        <p>Escolha o personagem mais forte.</p>
+      </a>
+    </div>
+
+    <div class="rodape">
+      © Além do Éden
+    </div>
+  </div>
+
+</body>
+</html>
